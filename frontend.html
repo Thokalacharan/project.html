@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="from.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiuRR7HBemsQZdrzn4AMbh6FtBG6lj3Osc8g&s');
+    }
+    form{
+      background: red;
+       padding: 30px;
+       max-width: 600px;
+       margin: 100px auto;
+       border-radius: 10px;
+    }
+    button{
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover{
+        background-color: #218838;
+    }
+    h1{
+      text-align: center;
+      font-size: 2.5em;
+      color: red;
+    }
+  </style>
+  <title>Document</title>
+  
+</head>
+<body>
+  <h1>FEEDBACK FORM</h1>
+  <form action="submit-feedback" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="contactNumber">ContactNumber:</label>
+    <input type="text" id="contactNumber" name="contactnumber"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="feedback">Describe your feedback</label>
+    <textarea name="feedback" id="feedback"></textarea><br><br>
+    <button type="submit">Submit:</button>
+</body>
+</html>
